@@ -6,21 +6,10 @@ Summary: A telegram toolkit written in Golang
 License: AGPL-3.0-only
 URL: https://github.com/iyear/tdl
 
-%ifarch x86_64
-%global archive Linux_64bit
-%endif
+ExclusiveArch: x86_64
+BuildArch: x86_64
 
-%ifarch i686
-%global archive Linux_32bit
-%endif
-
-%ifarch aarch64
-%global archive Linux_arm64
-%endif
-
-ExclusiveArch: x86_64 i686 aarch64
-
-Source0: https://github.com/iyear/tdl/releases/download/v%{version}/tdl_%{archive}.tar.gz
+Source0: https://github.com/iyear/tdl/releases/download/v%{version}/tdl_Linux_64bit.tar.gz
 
 %description
 tdl is a Telegram toolkit written in Go that can download media, upload files,
