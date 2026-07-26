@@ -6,9 +6,6 @@ Summary: A telegram toolkit written in Golang
 License: AGPL-3.0-only
 URL: https://github.com/iyear/tdl
 
-ExclusiveArch: x86_64
-BuildArch: x86_64
-
 Source0: https://github.com/iyear/tdl/releases/download/v%{version}/tdl_Linux_64bit.tar.gz
 
 %description
