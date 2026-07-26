@@ -18,7 +18,6 @@ URL: https://github.com/iyear/tdl
 %global archive Linux_arm64
 %endif
 
-%{!?archive:%global archive unsupported}
 ExclusiveArch: x86_64 i686 aarch64
 
 Source0: https://github.com/iyear/tdl/releases/download/v%{version}/tdl_%{archive}.tar.gz
@@ -43,5 +42,5 @@ install -Dpm644 LICENSE %{buildroot}%{_licensedir}/LICENSE
 %{_bindir}/tdl
 
 %changelog
-* Sunday, 26 July 2026 GlockTwentyFive <redninjaxbt@gmail.com> - 0.20.3-1
+* Sun Jul 26 2026 GlockTwentyFive <redninjaxbt@gmail.com> - 0.20.3-1
 - Initial build
